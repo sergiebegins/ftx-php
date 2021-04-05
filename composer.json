@@ -1,0 +1,7 @@
+{
+    "require": {
+        "vdbelt/ftx-php": "^0.1.4",
+        "php-http/curl-client": "^2.2",
+        "nyholm/psr7": "^1.4"
+    }
+}

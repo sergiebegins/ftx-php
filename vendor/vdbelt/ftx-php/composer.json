@@ -1,0 +1,44 @@
+{
+    "name": "vdbelt/ftx-php",
+    "description": "A PHP client for FTX.com",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin van de Belt",
+            "email": "martin@vandebelt.dk"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "psr/http-message": "^1.0",
+        "php-http/httplug": "^2.0",
+        "php-http/discovery": "^1.0",
+        "php-http/client-implementation": "^1.0",
+        "php-http/client-common": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "php-http/guzzle6-adapter": "^2.0",
+        "php-http/mock-client": "^1.3",
+        "nyholm/psr7": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "FTX\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FTX\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html build/",
+        "test-coverage-clover": "vendor/bin/phpunit --coverage-clover=coverage.xml"
+    }
+}
