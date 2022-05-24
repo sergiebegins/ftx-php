@@ -6,7 +6,7 @@ use FTX\FTX;
 $ftx = FTX::create();
 
 // Authenticated
-$ftx = FTX::create('VFuBTDN98zz_g1eNiN_k0gUiCy9YcmkEgbFBcvl-', '57LfpU5KI2T6qUhXYRfXy0JaAX6Hj9Lhc34xWxcs')->onSubaccount('test');
+$ftx = FTX::create('*****************', '***************')->onSubaccount('test');
 
 //$markets = $ftx->markets()->all();
 //$orderbook = $ftx->markets()->orderbook('BTC-PERP', 100);
